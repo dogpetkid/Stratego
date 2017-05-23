@@ -1,0 +1,1 @@
+##Stratego written by Dogpetkid
