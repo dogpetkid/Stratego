@@ -20,10 +20,13 @@ search: True # allowed [True, False]
 requirements:
     - requirements/Choose.py:
         updates: all
+        pin: True
     - requirements/servertest.py:
         updates: all
+        pin: True
     - requirements/clienttest.py:
         updates: all
+        pin: True
   #- requirements/staging.txt:
   #    # update all dependencies and pin them
   #    updates: all
