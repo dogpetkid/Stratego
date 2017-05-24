@@ -18,6 +18,12 @@ search: True # allowed [True, False]
 
 # adding requirements files manually, default is empty
 requirements:
+    - requirements/Choose.py:
+        updates: all
+    - requirements/servertest.py:
+        updates: all
+    - requirements/clienttest.py:
+        updates: all
   #- requirements/staging.txt:
   #    # update all dependencies and pin them
   #    updates: all
