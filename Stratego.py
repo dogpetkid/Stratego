@@ -3,6 +3,7 @@
 ##Imports
 import os
 from Choose import *
+import graphics
 try: import winsound
 except: pass
 try: ##Import the multiplayer additions
@@ -32,3 +33,4 @@ os.system('cls' if os.name == 'nt' else 'clear')
 ##To do:
 
 ##Start pieces
+
