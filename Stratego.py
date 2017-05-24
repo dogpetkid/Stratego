@@ -34,3 +34,63 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 ##Start pieces
 
+class piece():
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+        board.board[x,y] = self
+        if self.piece() == "bombB" or self.piece() == "flagF":
+            self.move = False
+        else:
+            self.move = True
+    
+    def piece(self):
+        return(type(self).__name__)
+
+class marshal1(piece):
+    pass
+
+class general2(piece):
+    pass
+
+class colonel3(piece):
+    pass
+
+class major4(piece):
+    pass
+
+class captain5(piece):
+    pass
+
+class lieutenant6(piece):
+    pass
+
+class sergeant7(piece):
+    pass
+
+class miner8(piece):
+    ##Can beat bombs
+    pass
+
+class scout9(piece):
+    ##Can go as far in a row as possible
+    pass
+
+class spyS(piece):
+    ##Can beat Marshal (1)
+    pass
+
+class bombB(piece):
+    pass
+
+class flagF(piece):
+    pass
+
+
+class board:
+    board = []
+    for x in range(10):
+        row = []
+        for y in range(10):
+            row.append("")
+        board.append(row)
