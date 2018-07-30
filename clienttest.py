@@ -19,7 +19,7 @@ class clientme():
                 if i%6 == 0:
                     print(".."+("."*int(((i/6)%3)+1))) ##Rotates from 3 to 5 dots to show that it is trying to conect
                 fail = True
-                pass
+pass==1.0.5
         if fail: print("No connection...")
         
         if not(fail):
