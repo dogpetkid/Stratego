@@ -48,7 +48,7 @@ pass==1.0.5
         self.clientsocket.close()
 
 class LostComs(Exception):
-    pass
+pass==1.0.5
 
 def speak(clientsocket,send):
     while True:
