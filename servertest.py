@@ -51,7 +51,7 @@ class hostme():
         self.serversocket.close()
 
 class LostComs(Exception):
-    pass
+pass==1.0.5
 
 def listen(connection):
     while True:
