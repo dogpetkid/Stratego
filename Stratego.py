@@ -46,6 +46,16 @@ class piece():
     
     def piece(self):
         return(type(self).__name__)
+	
+	def moves(self):
+		if self.move == False:
+			return []
+		else:
+			if self.piece() != "scout9":
+				for cord in [[0,1],[-1,0],[1,0],[0,-1]]:
+					xx = self.x + cord[0]
+					yy = self.y + cord[1]
+					
 
 class marshal1(piece):
     pass
@@ -86,6 +96,12 @@ class bombB(piece):
 class flagF(piece):
     pass
 
+class water(piece):
+	def __init__(self,x,y):
+        self.x = x
+        self.y = y
+        board.board[x,y] = self
+        self.move = False
 
 class board:
     board = []
